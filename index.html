@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle To-Do</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="head">
+                <a href="index.html" class="logo">
+                    <img src="./assets/img/logo.png" alt="img">
+                </a>
+
+                <div class="switch">
+                    <button type="button" class="add-list"><img src="./assets/img/add.png" alt="add"></button>
+                    <button type="button" class="remove-list"><img src="./assets/img/remove.png" alt="remove"></button>
+                </div>
+            </div>
+            <div class="tabs">
+                <ul class="tabs_list">
+                    <template class="tabs_template">
+                        
+                        <button type="button" class="tabs_btn"></button>
+                        
+                    </template>
+                </ul>
+            </div>
+            <div class="list-body">
+                <ul class="list-body_list">
+                    <template class="list-body_template">
+                        <li class="list-body_item">
+                            <div class="list-body_checkbox">
+                                <input type="checkbox" class="list-body_item-input">
+                                <span class="list-body_real-checkbox"></span>
+                            </div>
+                            <span class="list-body_task-text"></span>
+                            <button type="button" class="list-body_close">
+                                <svg class="list_body-svg" xmlns="http://www.w3.org/2000/svg"
+                                    width="32" height="32" viewBox="0 0 24 24"
+                                    role="img" aria-label="Закрыть">
+                                <line x1="5" y1="5" x2="19" y2="19"
+                                        stroke="rgb(0, 174, 47)" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="19" y1="5" x2="5"  y2="19"
+                                        stroke="rgb(0, 174, 47)" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+
+                            </button>
+                        </li>
+                    </template>
+                </ul>
+
+                <div class="list-body_add">
+                    <form class="list-body_add-form">
+                        <div class="list-body_add-wrap">
+                            <input class="list-body_add-input" type="text" placeholder="Добавить">
+                            <button type="submit" class="list-body_add-button">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="50px" height="50px" viewBox="0 0 24 24"
+                                    role="img" aria-label="Добавить">
+                                <line x1="12" y1="5" x2="12" y2="19"
+                                        stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                <line x1="5" y1="12" x2="19" y2="12"
+                                        stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="progress-wrap">
+                <progress class="progress-bar" value="0" max="100"></progress>
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
